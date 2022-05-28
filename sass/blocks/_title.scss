@@ -1,0 +1,47 @@
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 60px;
+	&__promo {
+		font-size: 48px;
+		line-height: 60px;
+		width: 535px;
+		margin-top: 10px;
+	}
+	&__about {
+		margin: 17px 0px 0px 0px;
+	}
+	&__section-title {
+		text-align: center;
+	}
+}
+.subtitle {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 21px;
+	position: relative;
+	&__name {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	&__about {
+		@include before_circle;
+		padding: 2px 0px 0px 12px;
+	}
+	&__contacts {
+		@include before_circle;
+		padding: 2px 0px 0px 12px;
+		margin: 0px 0px 12px 0px;
+	}
+	&__section-subtitle {
+		font-size: 16px;
+		text-align: center;
+		margin: 0px 0px 13px 0px;
+		@include before_circle;
+		&::before {
+			top: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
